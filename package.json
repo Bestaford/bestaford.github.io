@@ -1,0 +1,21 @@
+{
+  "name": "bestaford.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier . --write",
+    "start": "parcel ./src/index.html --dist-dir ./docs --open",
+    "build": "parcel build ./src/index.html --dist-dir ./docs --no-source-maps"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "prettier": "^3.2.4",
+    "sharp": "^0.31.3"
+  },
+  "targets": {
+    "default": {
+      "publicUrl": "https://bestaford.github.io/"
+    }
+  }
+}
